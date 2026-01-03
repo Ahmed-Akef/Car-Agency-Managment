@@ -1,0 +1,691 @@
+﻿@page
+@model Car_Agency_Management.Pages.Car_galleryModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find New Cars for Sale in Egypt</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100%;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            padding-top: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Fixed padding for navbar */
+        .main-content-wrapper {
+            padding-top: 80px;
+            min-height: 100vh;
+        }
+
+        .container {
+            padding-top: 20px;
+        }
+
+        .parallax-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bg-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.03) 0%, rgba(14, 165, 233, 0.05) 100%);
+        }
+
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: #06b6d4;
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            background: #1e293b;
+            top: 60%;
+            right: 10%;
+            animation-delay: 3s;
+        }
+
+        .shape-3 {
+            width: 150px;
+            height: 150px;
+            background: #06b6d4;
+            bottom: 20%;
+            left: 15%;
+            animation-delay: 6s;
+        }
+
+        @@keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+            33% {
+                transform: translateY(-30px) translateX(20px) rotate(120deg);
+            }
+            66% {
+                transform: translateY(20px) translateX(-30px) rotate(240deg);
+            }
+        }
+
+        .main-title {
+            font-size: 24px;
+            font-weight: 400;
+            color: #212529;
+            margin-bottom: 30px;
+        }
+
+        .sidebar {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .filter-section {
+            border-bottom: 1px solid #e9ecef;
+            padding: 15px 0;
+        }
+
+        .filter-section:last-child {
+            border-bottom: none;
+        }
+
+        .filter-label {
+            font-weight: 500;
+            color: #212529;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .brand-filter-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+        .brand-filter-option {
+            background-color: white;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            padding: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .brand-filter-option:hover,
+        .brand-filter-option.selected {
+            border-color: #0066cc;
+            background-color: #e7f3ff;
+        }
+
+        .brand-filter-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        .tabs-container {
+            background-color: transparent;
+            border-radius: 8px;
+            padding: 0;
+            margin-bottom: 20px;
+            box-shadow: none;
+        }
+
+        .nav-tabs {
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 20px 30px;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #212529;
+            border-bottom: 3px solid #0066cc;
+            background-color: transparent;
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+            padding: 20px;
+            position: relative;
+        }
+
+        @@media (max-width: 1200px) {
+            .brands-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @@media (max-width: 992px) {
+            .brands-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @@media (max-width: 768px) {
+            .brands-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .brand-card {
+            text-align: center;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .brand-card:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            border-color: #dee2e6;
+        }
+
+        .brand-card.selected {
+            background-color: #e7f3ff;
+            border: 3px solid #0066cc;
+        }
+
+        .brand-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-bottom: 8px;
+            transition: transform 0.3s;
+        }
+
+        .brand-name {
+            font-weight: 500;
+            color: #212529;
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+
+        .brand-count {
+            color: #6c757d;
+            font-size: 11px;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .results-count {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .sort-dropdown {
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 8px 15px;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .car-card:hover {
+            box-shadow: 0 12px 24px rgba(0,102,204,0.2);
+            transform: translateY(-8px);
+        }
+
+        .car-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 15px;
+        }
+
+        .car-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            transition: transform 0.4s ease;
+        }
+
+        .car-card:hover .car-image {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        .price-section {
+            border-top: 1px solid #e9ecef;
+            padding-top: 15px;
+        }
+
+        .starting-price {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .price-amount {
+            font-size: 24px;
+            font-weight: 700;
+            color: #212529;
+            margin-bottom: 15px;
+        }
+
+        .payment-details {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .payment-box {
+            flex: 1;
+        }
+
+        .payment-label {
+            color: #6c757d;
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+
+        .payment-value {
+            font-weight: 600;
+            color: #212529;
+            font-size: 14px;
+        }
+
+        .btn-add-car {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(40, 167, 69, 0.2);
+        }
+
+        .btn-add-car:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+            color: white;
+        }
+
+        .btn-clear-filters {
+            padding: 10px 20px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .btn-clear-filters:hover {
+            background: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-bg">
+        <div class="bg-layer"></div>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </div>
+
+    <div class="main-content-wrapper">
+        <div class="container" style="position: relative; z-index: 1;">
+            <h1 class="main-title">Browse all cars (@Model.TotalResults results)</h1>
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <div class="sidebar-title">Modify Search</div>
+                        
+                        <!-- Brand Filter Section -->
+                        <div class="filter-section">
+                            <div class="filter-label" onclick="toggleFilter('brand')">
+                                Brand
+                                <i class="fas fa-chevron-down" id="brand-arrow"></i>
+                            </div>
+                            <div id="brand-filter" style="display: none; margin-top: 15px;">
+                                <div class="brand-filter-grid">
+                                    @foreach (var brand in Model.BrandsWithCount)
+                                    {
+                                        <div class="brand-filter-option @(Model.SelectedBrand == brand.Key ? "selected" : "")" 
+                                             onclick="filterByBrand('@brand.Key')">
+                                            <div style="font-weight: 600; font-size: 12px;">@brand.Key</div>
+                                            <div style="font-size: 10px; color: #6c757d;">(@brand.Value)</div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        @if (!string.IsNullOrEmpty(Model.SelectedBrand) || !string.IsNullOrEmpty(Model.SortBy) && Model.SortBy != "default")
+                        {
+                            <button class="btn-clear-filters" onclick="clearFilters()">
+                                <i class="fas fa-times"></i> Clear All Filters
+                            </button>
+                        }
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <!-- Add Car Button -->
+                    @if (HttpContext.Session.GetString("UserRole") == "Admin")
+                    {
+                        <div style="margin-bottom: 20px; display: flex; justify-content: flex-end;">
+                            <a href="/AddCar" class="btn-add-car" style="text-decoration: none;">
+                                <i class="fas fa-plus" style="margin-right: 8px;"></i>
+                                Add New Car
+                            </a>
+                        </div>
+                    }
+
+                    <!-- Tabs -->
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#brands">
+                                    <i class="fas fa-th me-2"></i>Brands
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="brands">
+                                <!-- Dynamic Brand Cards from Database -->
+                                <div class="brands-grid position-relative" id="brandsGrid">
+                                    @foreach (var brand in Model.BrandsWithCount)
+                                    {
+                                        <div class="brand-card @(Model.SelectedBrand == brand.Key ? "selected" : "")" 
+                                             onclick="filterByBrand('@brand.Key')">
+                                            <div class="brand-image">@brand</div>
+
+                                            <div class="brand-name">@brand.Key</div>
+                                            <div class="brand-count">(@brand.Value cars)</div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Results Header -->
+                        <div class="results-header">
+                            <div class="results-count">
+                                @Model.TotalResults Cars Found
+                                @if (!string.IsNullOrEmpty(Model.SelectedBrand))
+                                {
+                                    <span style="font-size: 14px; color: #6c757d;"> - Filtered by: @Model.SelectedBrand</span>
+                                }
+                            </div>
+                            <select class="sort-dropdown" id="sortDropdown" onchange="handleSort()">
+                                <option value="default" selected="@(Model.SortBy == "default" || string.IsNullOrEmpty(Model.SortBy))">Default</option>
+                                <option value="price-low" selected="@(Model.SortBy == "price-low")">⬍ Price (Low to High)</option>
+                                <option value="price-high" selected="@(Model.SortBy == "price-high")">⬍ Price (High to Low)</option>
+                                <option value="newest" selected="@(Model.SortBy == "newest")">Newest First</option>
+                                <option value="popular" selected="@(Model.SortBy == "popular")">Most Popular</option>
+                            </select>
+                        </div>
+
+                        <!-- Car Cards from Database -->
+                        <div class="row g-4">
+                            @if (Model.Cars != null && Model.Cars.Any())
+                            {
+                                @foreach (var car in Model.Cars)
+                                {
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="car-card" data-car-id="@car.CarId">
+                                            <div class="car-title">@car.Name</div>
+
+                                            <img src="@car.Image"
+                                                 alt="@car.Name"
+                                                 class="car-image"
+                                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400?text=No+Image';" />
+
+                                            <div class="price-section">
+                                                <div class="starting-price">Starting From</div>
+                                                <div class="price-amount">@car.Price EGP</div>
+
+                                                <div class="payment-details">
+                                                    <div class="payment-box">
+                                                        <div class="payment-label">Min Deposit</div>
+                                                        <div class="payment-value">@car.MinDeposit EGP</div>
+                                                    </div>
+
+                                                    <div class="payment-box">
+                                                        <div class="payment-label">Monthly</div>
+                                                        <div class="payment-value">@car.MonthlyInstallment EGP</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="car-meta mt-2 text-muted" style="font-size: 12px;">
+                                                    @car.Brand • @car.Year
+                                                </div>
+
+                                                @if (HttpContext.Session.GetString("UserRole") == "Admin")
+                                                {
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center border-top pt-2">
+                                                        <a href="/AddCar?carId=@car.CarId" class="btn btn-sm btn-outline-primary" onclick="event.stopPropagation();">
+                                                            <i class="fas fa-edit"></i> Edit
+                                                        </a>
+                                                        <form id="deleteForm-@car.CarId" method="post" asp-page-handler="Delete" asp-route-carId="@car.CarId" style="display:inline;" onclick="event.stopPropagation();">
+                                                            <button type="button" class="btn btn-sm btn-outline-danger" onclick="confirmDeleteCar(@car.CarId)">
+                                                                <i class="fas fa-trash"></i> Delete
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                <div class="col-12">
+                                    <div class="alert alert-info text-center">
+                                        <i class="fas fa-info-circle"></i> No cars found matching your criteria.
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle filter sections
+        function toggleFilter(filterName) {
+            const filter = document.getElementById(filterName + '-filter');
+            const arrow = document.getElementById(filterName + '-arrow');
+            if (filter.style.display === 'none') {
+                filter.style.display = 'block';
+                arrow.classList.remove('fa-chevron-down');
+                arrow.classList.add('fa-chevron-up');
+            } else {
+                filter.style.display = 'none';
+                arrow.classList.remove('fa-chevron-up');
+                arrow.classList.add('fa-chevron-down');
+            }
+        }
+
+        // Filter by brand - preserve current sort
+        function filterByBrand(brand) {
+            const currentSort = document.getElementById('sortDropdown').value;
+            const params = new URLSearchParams();
+            params.append('handler', 'FilterBrand');
+            params.append('brand', brand);
+            if (currentSort && currentSort !== 'default') {
+                params.append('sortBy', currentSort);
+            }
+            window.location.href = `?${params.toString()}`;
+        }
+
+        // Handle sort dropdown - preserve current brand filter
+        function handleSort() {
+            const sortBy = document.getElementById('sortDropdown').value;
+            const currentBrand = '@Model.SelectedBrand';
+            const params = new URLSearchParams();
+            
+            if (sortBy && sortBy !== 'default') {
+                params.append('handler', 'Sort');
+                params.append('sortBy', sortBy);
+            }
+            
+            if (currentBrand) {
+                params.append('brand', currentBrand);
+            }
+            
+            window.location.href = params.toString() ? `?${params.toString()}` : window.location.pathname;
+        }
+
+        // Clear all filters
+        function clearFilters() {
+            window.location.href = window.location.pathname;
+        }
+
+        // Make car cards clickable
+        document.querySelectorAll('.car-card').forEach(card => {
+            card.style.cursor = 'pointer';
+
+            card.addEventListener('click', function(e) {
+                const carId = this.getAttribute('data-car-id');
+                if (carId) {
+                    window.location.href = `/CarDetails/${carId}`;
+                }
+            });
+
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Set the dropdown value on page load based on URL parameter or Model
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sortParam = urlParams.get('sortBy') || '@Model.SortBy';
+            const dropdown = document.getElementById('sortDropdown');
+            
+            if (sortParam && dropdown) {
+                dropdown.value = sortParam;
+            }
+        });
+
+        function confirmDeleteCar(carId) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "This car will be removed from the gallery permanently!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#dc3545',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: 'Yes, delete car!',
+                cancelButtonText: 'Cancel',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById('deleteForm-' + carId).submit();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

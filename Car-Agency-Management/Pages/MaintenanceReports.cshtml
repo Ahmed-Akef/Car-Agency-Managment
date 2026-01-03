@@ -1,0 +1,67 @@
+@page
+@model Car_Agency_Management.Pages.MaintenanceReportsModel
+@{
+    ViewData["Title"] = "Maintenance Reports";
+}
+
+<div class="container" style="max-width: 1200px; margin: 2rem auto;">
+    <h2 style="margin-bottom: 2rem; color: #333;">Maintenance Reports</h2>
+
+    <div class="card" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead style="background: #f8f9fa; border-bottom: 2px solid #e9ecef;">
+                <tr>
+                    <th style="padding: 1rem; text-align: left;">ID</th>
+                    <th style="padding: 1rem; text-align: left;">Reported By</th>
+                    <th style="padding: 1rem; text-align: left;">Car Model</th>
+                    <th style="padding: 1rem; text-align: left;">Issue Type</th>
+                    <th style="padding: 1rem; text-align: left;">Description</th>
+                    <th style="padding: 1rem; text-align: left;">Date</th>
+                    <th style="padding: 1rem; text-align: left;">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var report in Model.Reports)
+                {
+                    <tr style="border-bottom: 1px solid #e9ecef;">
+                        <td style="padding: 1rem;">#@report.ReportID</td>
+                        <td style="padding: 1rem;">
+                            <strong>@report.CustomerName</strong><br>
+                            <small style="color: #666;">@report.CustomerEmail</small>
+                        </td>
+                        <td style="padding: 1rem;">@report.CarModel</td>
+                        <td style="padding: 1rem;">
+                            <span style="background: #e3f2fd; color: #0d47a1; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.9em;">
+                                @report.IssueType
+                            </span>
+                        </td>
+                        <td style="padding: 1rem; max-width: 300px;">@report.IssueDescription</td>
+                        <td style="padding: 1rem;">@report.ReportDate.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td style="padding: 1rem;">
+                            @if(report.Status == "Pending")
+                            {
+                                <span style="background: #fff3cd; color: #856404; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: bold;">@report.Status</span>
+                            }
+                            else if(report.Status == "Completed")
+                            {
+                                <span style="background: #d4edda; color: #155724; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: bold;">@report.Status</span>
+                            }
+                            else
+                            {
+                                <span style="background: #d1ecf1; color: #0c5460; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: bold;">@report.Status</span>
+                            }
+                        </td>
+                    </tr>
+                }
+                @if (Model.Reports.Count == 0)
+                {
+                    <tr>
+                        <td colspan="7" style="padding: 2rem; text-align: center; color: #666;">
+                            No maintenance reports found.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+@page
+@model Car_Agency_Management.Pages.ImportRequestsModel
+@{
+    ViewData["Title"] = "Import Requests";
+}
+
+<div class="container" style="max-width: 1200px; margin: 2rem auto;">
+    <h2 style="margin-bottom: 2rem; color: #333;">Import Requests</h2>
+
+    <div class="card" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead style="background: #f8f9fa; border-bottom: 2px solid #e9ecef;">
+                <tr>
+                    <th style="padding: 1rem; text-align: left;">Date</th>
+                    <th style="padding: 1rem; text-align: left;">Customer</th>
+                    <th style="padding: 1rem; text-align: left;">Contact</th>
+                    <th style="padding: 1rem; text-align: left;">Car Details</th>
+                    <th style="padding: 1rem; text-align: left;">Message</th>
+                    <!-- <th style="padding: 1rem; text-align: left;">Actions</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var request in Model.Requests)
+                {
+                    <tr style="border-bottom: 1px solid #e9ecef;">
+                        <td style="padding: 1rem;">@request.RequestDate.ToString("yyyy-MM-dd")</td>
+                        <td style="padding: 1rem;">
+                            <strong>@request.CustomerName</strong>
+                        </td>
+                        <td style="padding: 1rem;">
+                            <div><i class="fas fa-envelope"></i> @request.Email</div>
+                            <div><i class="fas fa-phone"></i> @request.Phone</div>
+                        </td>
+                        <td style="padding: 1rem;">
+                            <strong>@request.CarName</strong> (@request.CarYear)
+                        </td>
+                        <td style="padding: 1rem; max-width: 300px;">@((request.Message != null) ? request.Message : "-")</td>
+                        <!--
+                        <td style="padding: 1rem;">
+                            <button class="btn btn-sm btn-primary">Contact</button>
+                        </td>
+                        -->
+                    </tr>
+                }
+                @if (Model.Requests.Count == 0)
+                {
+                    <tr>
+                        <td colspan="5" style="padding: 2rem; text-align: center; color: #666;">
+                            No import requests found.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

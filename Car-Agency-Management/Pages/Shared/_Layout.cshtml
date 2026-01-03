@@ -7,38 +7,497 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Car_Agency_Management.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- SweetAlert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/@@sweetalert2/theme-dark@@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@@11/dist/sweetalert2.min.js"></script>
+    <style>
+        /* Frosted Glass Navbar Styles */
+        .navbar-glass {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(5, 5, 8, 0.75) !important;
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+            .navbar-glass.scrolled {
+                background: rgba(10, 10, 12, 0.9) !important;
+                backdrop-filter: blur(30px) saturate(180%);
+                -webkit-backdrop-filter: blur(30px) saturate(180%);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            .navbar-glass .navbar-brand,
+            .navbar-glass .nav-link {
+                color: rgba(255, 255, 255, 0.75) !important;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                padding: 0.5rem 1.2rem !important;
+                margin: 0 4px;
+                border-radius: 50px;
+                letter-spacing: 0.3px;
+                font-size: 0.95rem;
+            }
+
+                .navbar-glass .nav-link:hover,
+                .navbar-glass .nav-link.active {
+                    color: #ffffff !important;
+                    background: rgba(255, 255, 255, 0.1);
+                    transform: translateY(0);
+                    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(4px);
+                }
+                
+                .navbar-glass .navbar-brand {
+                    font-weight: 800;
+                    letter-spacing: -0.5px;
+                    font-size: 1.6rem;
+                    padding-left: 0 !important;
+                    color: #fff !important;
+                }
+
+            .navbar-glass .navbar-toggler {
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 12px;
+                padding: 0.5rem 0.75rem;
+            }
+
+            .navbar-glass .navbar-toggler-icon {
+                filter: invert(1);
+                opacity: 0.8;
+            }
+
+        /* Admin Dashboard Special Link */
+        .nav-link.admin-dashboard {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 0.5rem 1.5rem !important;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff !important;
+            box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+        }
+
+            .nav-link.admin-dashboard:hover {
+                background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(118, 75, 162, 0.5);
+                border-color: rgba(255, 255, 255, 0.4);
+            }
+
+        .admin-icon {
+            font-size: 1rem;
+        }
+
+        @@keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        body footer.footer,
+        footer.footer.border-top,
+        footer.footer.text-muted {
+            background: rgba(22, 22, 23, 0.7) !important;
+            backdrop-filter: blur(20px) !important;
+            -webkit-backdrop-filter: blur(20px) !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+            /* box-shadow: 0 -8px 32px 0 rgba(0, 0, 0, 0.3) !important; */
+            color: #ffffff !important;
+            padding: 60px 20px 30px !important;
+            margin-top: auto !important;
+        }
+
+        footer.footer * {
+            color: inherit !important;
+        }
+
+        footer.footer h3 {
+            color: #ffffff !important;
+        }
+
+        footer.footer .footer-section a,
+        footer.footer .footer-section p,
+        footer.footer .footer-section li {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        footer.footer .footer-bottom,
+        footer.footer .footer-bottom p {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+
+            footer.footer .footer-bottom a {
+                color: #ffffff !important;
+            }
+
+        html, body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+            body > .container {
+                flex: 1;
+            }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            .footer-section ul li {
+                margin-bottom: 12px;
+            }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+            .sidebar-link:hover, .sidebar-link.active {
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff !important;
+                transform: translateX(5px);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+            .social-links a:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-3px);
+            }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+
+            .footer-bottom a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+                transition: opacity 0.3s ease;
+            }
+
+                .footer-bottom a:hover {
+                    opacity: 0.8;
+                }
+
+        @@media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        /* Adjust body for fixed navbar */
+        body {
+            padding-top: 80px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #0f172a !important;
+            color: #e2e8f0 !important;
+        }
+
+        body.dark-mode .navbar-glass {
+            background: rgba(15, 23, 42, 0.85) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode .footer {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        body.dark-mode #darkModeIcon {
+            color: #fbbf24;
+        }
+
+        body.dark-mode #darkModeText {
+            color: #fbbf24;
+        }
+
+        /* Modern SweetAlert Customizations */
+        .swal2-popup {
+            border-radius: 24px !important;
+            background: rgba(15, 23, 42, 0.95) !important;
+            backdrop-filter: blur(20px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+            padding: 2.5rem !important;
+        }
+
+        .swal2-title {
+            color: #fff !important;
+            font-weight: 700 !important;
+            letter-spacing: -0.025em !important;
+        }
+
+        .swal2-html-container {
+            color: rgba(255, 255, 255, 0.7) !important;
+            font-size: 1.1rem !important;
+        }
+
+        .swal2-confirm {
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%) !important;
+            border-radius: 12px !important;
+            padding: 12px 32px !important;
+            font-weight: 600 !important;
+            box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.3) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .swal2-confirm:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 20px 25px -5px rgba(6, 182, 212, 0.4) !important;
+        }
+
+        .swal2-cancel {
+            background: rgba(255, 255, 255, 0.05) !important;
+            border-radius: 12px !important;
+            padding: 12px 32px !important;
+            font-weight: 600 !important;
+            color: #fff !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .swal2-cancel:hover {
+            background: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .swal2-icon {
+            border-color: rgba(255, 255, 255, 0.2) !important;
+        }
+    </style>
+    @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-glass" id="mainNavbar">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Car_Agency_Management</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Redline Garage</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-start">
+                    <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+                        
+                        @if (Context.Session.GetInt32("UserId") != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Car-gallery">Car Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/maintenance">Maintenance</a>
+                            </li>
+                   
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/importedCars">Imported</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <form method="post" asp-page-handler="ProfileRedirect" class="d-inline">
+                                    <button type="submit" class="nav-link btn btn-link" style="color: #ffffff; padding: 0.5rem 1rem; border: none; background: transparent;">
+                                        <i class="fas fa-user"></i>
+                                    </button>
+                                </form>
+                            </li>
+
+                            
+                                var userRole = Context.Session.GetString("UserRole");
+                            
+
+                            @if (userRole == "Admin" || userRole == "Maintenance")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-page="/user_manage">Users</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-page="/MaintenanceReports">Reports</a>
+                                </li>
+                            }
+                            
+                            @if (userRole == "Admin")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-page="/ImportRequests">Import Requests</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link admin-dashboard" asp-area="" asp-page="/AdminDashboard">
+                                        <i class="fas fa-user-shield admin-icon"></i>
+                                        Admin
+                                    </a>
+                                </li>
+                            }
+                            
+                            
+                            <li class="nav-item">
+                                <a id="darkModeToggle" class="nav-link" href="javascript:void(0);" onclick="toggleDarkMode()" style="font-weight: 700;">
+                                    <i class="fas fa-moon" id="darkModeIcon"></i> <span id="darkModeText">Dark Mode</span>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a id="logoutLink" class="nav-link text-danger" href="javascript:void(0);" onclick="confirmSignOut()" style="font-weight: 700;">
+                                    <i class="fas fa-sign-out-alt"></i> Sign Out
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/sign_up">Sign Up</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Car_Agency_Management - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Redline Garage</h3>
+                    <p>Your trusted partner in automotive excellence. Managing premium vehicles with care and professionalism since 2025.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a asp-area="" asp-page="/Index">Home</a></li>
+                        <li><a asp-area="" asp-page="/Car-gallery">Car Gallery</a></li>
+                        <li><a asp-area="" asp-page="/rent">Rent</a></li>
+                        <li><a asp-area="" asp-page="/maintenance">Maintenance</a></li>
+                        <li><a asp-area="" asp-page="/Payment_page">Payment</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a asp-area="" asp-page="/Login">Login</a></li>
+                        <li><a asp-area="" asp-page="/sign_up">Sign Up</a></li>
+                        <li>
+                            <form method="post" asp-page-handler="ProfileRedirect" style="display: inline;">
+                                <button type="submit" style="background: none; border: none; color: rgba(255, 255, 255, 0.8); padding: 0; cursor: pointer; text-decoration: none; transition: all 0.3s ease;">Profile</button>
+                            </form>
+                        </li>
+                        <li><a asp-area="" asp-page="/Privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><a href="mailto:info@redlinegarage.com">info@redlinegarage.com</a></li>
+                        <li style="color: rgba(255, 255, 255, 0.8);">123 Auto Street<br>City, State 12345</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Car_Agency_Management - Redline Garage. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
@@ -46,6 +505,90 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
+    <script>
+        // Dynamic Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Highlight active page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href')) {
+                    const linkPath = new URL(link.href, window.location.origin).pathname;
+                    if (currentPath === linkPath) {
+                        link.style.color = '#00aaff';
+                        link.style.fontWeight = '700';
+                    }
+                }
+            });
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        function confirmSignOut() {
+            Swal.fire({
+                title: 'Sign Out?',
+                text: "Are you sure you want to sign out of your account?",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes',
+                cancelButtonText: 'No',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '/Logout';
+                }
+            });
+        }
+
+        // Dark Mode Toggle Function
+        function toggleDarkMode() {
+            const body = document.body;
+            const icon = document.getElementById('darkModeIcon');
+            const text = document.getElementById('darkModeText');
+            
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                text.textContent = 'Light Mode';
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                text.textContent = 'Dark Mode';
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Check for saved dark mode preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkMode = localStorage.getItem('darkMode');
+            const icon = document.getElementById('darkModeIcon');
+            const text = document.getElementById('darkModeText');
+            
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+                if (icon && text) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                    text.textContent = 'Light Mode';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
