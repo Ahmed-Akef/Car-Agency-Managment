@@ -20,20 +20,96 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/CIE 206/Project/Car-Agency-Management/Pages/AddCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/Car-gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyLWdhbGxlcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/CarDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/ChartTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcnRUZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/DebugUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVidWdVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/CIE 206/Project/Car-Agency-Management/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/Forgot_Password.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290X1Bhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/importedCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaW1wb3J0ZWRDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/ImportRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0UmVxdWVzdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/CIE 206/Project/Car-Agency-Management/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/CIE 206/Project/Car-Agency-Management/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/maintenance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWFpbnRlbmFuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/MaintenanceReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuY2VSZXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/Payment_page.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudF9wYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/CIE 206/Project/Car-Agency-Management/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/CIE 206/Project/Car-Agency-Management/Pages/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/rent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/CIE 206/Project/Car-Agency-Management/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/sign_up.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2lnbl91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CIE 206/Project/Car-Agency-Management/Pages/user_manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlcl9tYW5hZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/CIE 206/Project/Car-Agency-Management/Pages/_ViewImports.cshtml]

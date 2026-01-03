@@ -1,0 +1,537 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Car-Agency-Management.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Car-Agency-Management.0enzzqgue2.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Angebotsbild-bmw-x3-20d-xdrive-q1-2025.png",
+      "PackagePath": "staticwebassets\\images\\Angebotsbild-bmw-x3-20d-xdrive-q1-2025.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Audi-A4.jpeg",
+      "PackagePath": "staticwebassets\\images\\Audi-A4.jpeg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\BMW.svg.png",
+      "PackagePath": "staticwebassets\\images\\BMW.svg.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Chery.png",
+      "PackagePath": "staticwebassets\\images\\Chery.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Cirtoen-c3.jpeg",
+      "PackagePath": "staticwebassets\\images\\Cirtoen-c3.jpeg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Citroen-logo-2009.png",
+      "PackagePath": "staticwebassets\\images\\Citroen-logo-2009.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Emblem-Audi.png",
+      "PackagePath": "staticwebassets\\images\\Emblem-Audi.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\KIA_logo2.svg.png",
+      "PackagePath": "staticwebassets\\images\\KIA_logo2.svg.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\MG-ZS-BLACK.png",
+      "PackagePath": "staticwebassets\\images\\MG-ZS-BLACK.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\MG_Motor_2021_logo.svg.png",
+      "PackagePath": "staticwebassets\\images\\MG_Motor_2021_logo.svg.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Mercedes-Benz.png",
+      "PackagePath": "staticwebassets\\images\\Mercedes-Benz.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Mercedes-Logo.svg.png",
+      "PackagePath": "staticwebassets\\images\\Mercedes-Logo.svg.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Mercedes.jpeg",
+      "PackagePath": "staticwebassets\\images\\Mercedes.jpeg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Nissan-sunny.png",
+      "PackagePath": "staticwebassets\\images\\Nissan-sunny.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Proton-saga.png",
+      "PackagePath": "staticwebassets\\images\\Proton-saga.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Renault-duster.jpg",
+      "PackagePath": "staticwebassets\\images\\Renault-duster.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Suzuki_S-Presso_Exterior_01.png",
+      "PackagePath": "staticwebassets\\images\\Suzuki_S-Presso_Exterior_01.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Toyota-logo-icon-on-transparent--PNG.png",
+      "PackagePath": "staticwebassets\\images\\Toyota-logo-icon-on-transparent--PNG.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\Tucson.png",
+      "PackagePath": "staticwebassets\\images\\Tucson.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\bm1.jpg",
+      "PackagePath": "staticwebassets\\images\\bm1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\bm2.jpg",
+      "PackagePath": "staticwebassets\\images\\bm2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\bm3.jpg",
+      "PackagePath": "staticwebassets\\images\\bm3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\chery-logo-4k-hd-chery-11563527110ebyxrf9l1d.png",
+      "PackagePath": "staticwebassets\\images\\chery-logo-4k-hd-chery-11563527110ebyxrf9l1d.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\cit1.jpg",
+      "PackagePath": "staticwebassets\\images\\cit1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\cit2.jpg",
+      "PackagePath": "staticwebassets\\images\\cit2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\cit3.jpg",
+      "PackagePath": "staticwebassets\\images\\cit3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\corolla.png",
+      "PackagePath": "staticwebassets\\images\\corolla.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\hd-renault-logo-transparent-background-701751694707700rafepr2bno.png",
+      "PackagePath": "staticwebassets\\images\\hd-renault-logo-transparent-background-701751694707700rafepr2bno.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\images.jpeg",
+      "PackagePath": "staticwebassets\\images\\images.jpeg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\jetour-logo.png",
+      "PackagePath": "staticwebassets\\images\\jetour-logo.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\kia-sportage.jpg",
+      "PackagePath": "staticwebassets\\images\\kia-sportage.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\kia1.jpg",
+      "PackagePath": "staticwebassets\\images\\kia1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\kia2.jpg",
+      "PackagePath": "staticwebassets\\images\\kia2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\kia3.jpg",
+      "PackagePath": "staticwebassets\\images\\kia3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\login-car.jpg",
+      "PackagePath": "staticwebassets\\images\\login-car.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\merc1.jpg",
+      "PackagePath": "staticwebassets\\images\\merc1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\merc2.jpg",
+      "PackagePath": "staticwebassets\\images\\merc2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\merc3.jpg",
+      "PackagePath": "staticwebassets\\images\\merc3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\mercedes-280se.png",
+      "PackagePath": "staticwebassets\\images\\mercedes-280se.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\mg1.jpg",
+      "PackagePath": "staticwebassets\\images\\mg1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\mg2.jpg",
+      "PackagePath": "staticwebassets\\images\\mg2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\mg3.jpg",
+      "PackagePath": "staticwebassets\\images\\mg3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\png-clipart-nissan-car-logo-nissan-emblem-trademark.png",
+      "PackagePath": "staticwebassets\\images\\png-clipart-nissan-car-logo-nissan-emblem-trademark.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\ren1.jpg",
+      "PackagePath": "staticwebassets\\images\\ren1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\ren2.jpg",
+      "PackagePath": "staticwebassets\\images\\ren2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\ren3.jpg",
+      "PackagePath": "staticwebassets\\images\\ren3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\runnning suzuki.jpg",
+      "PackagePath": "staticwebassets\\images\\runnning suzuki.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\saga1.jpg",
+      "PackagePath": "staticwebassets\\images\\saga1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\saga2.jpg",
+      "PackagePath": "staticwebassets\\images\\saga2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\saga3.jpg",
+      "PackagePath": "staticwebassets\\images\\saga3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\sunny interior 1.jpg",
+      "PackagePath": "staticwebassets\\images\\sunny interior 1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\sunny interior 2.jpg",
+      "PackagePath": "staticwebassets\\images\\sunny interior 2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\sunny1.jpg",
+      "PackagePath": "staticwebassets\\images\\sunny1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\suzuki 2.jpg",
+      "PackagePath": "staticwebassets\\images\\suzuki 2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\suzuki interior.jpg",
+      "PackagePath": "staticwebassets\\images\\suzuki interior.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\tig1.jpg",
+      "PackagePath": "staticwebassets\\images\\tig1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\tig2.jpg",
+      "PackagePath": "staticwebassets\\images\\tig2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\tig3.jpg",
+      "PackagePath": "staticwebassets\\images\\tig3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\toy1.jpg",
+      "PackagePath": "staticwebassets\\images\\toy1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\toy2.jpg",
+      "PackagePath": "staticwebassets\\images\\toy2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\toy3.jpg",
+      "PackagePath": "staticwebassets\\images\\toy3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\tusc 3.jpg",
+      "PackagePath": "staticwebassets\\images\\tusc 3.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\tusc1.jpg",
+      "PackagePath": "staticwebassets\\images\\tusc1.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\tusc2.jpg",
+      "PackagePath": "staticwebassets\\images\\tusc2.jpg"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\web-logo - Edited.png",
+      "PackagePath": "staticwebassets\\images\\web-logo - Edited.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\web-logo.png",
+      "PackagePath": "staticwebassets\\images\\web-logo.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\images\\web-logo_-_Edited_3_cropped.png",
+      "PackagePath": "staticwebassets\\images\\web-logo_-_Edited_3_cropped.png"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\CIE 206\\Project\\Car-Agency-Management\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Car-Agency-Management.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Car-Agency-Management.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Car-Agency-Management.props",
+      "PackagePath": "build\\Car-Agency-Management.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Car-Agency-Management.props",
+      "PackagePath": "buildMultiTargeting\\Car-Agency-Management.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Car-Agency-Management.props",
+      "PackagePath": "buildTransitive\\Car-Agency-Management.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
